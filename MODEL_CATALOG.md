@@ -7,7 +7,7 @@ This catalog summarizes the public Agnes AI model families and the recommended A
 | Field | Value |
 | --- | --- |
 | Catalog version | `2026.06.22` |
-| Last updated | `2026-06-22 00:00 Asia/Shanghai` |
+| Last updated | `2026-06-22 00:00 Asia/Singapore` |
 | Scope | Public model, endpoint, quota, and troubleshooting reference |
 | Change notice | Rate limits, subscription quotas, model parameters, and availability may change. Treat the values in this catalog as current reference values, not permanent contractual limits. |
 
