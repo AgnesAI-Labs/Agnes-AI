@@ -1,6 +1,6 @@
 # Troubleshooting Agnes AI API Integrations
 
-Last updated: `2026-06-22 00:00 Asia/Singapore`
+Last updated: `2026-06-28 00:00 Asia/Singapore`
 
 Use this guide when an Agnes AI API integration fails or behaves differently than expected.
 
@@ -13,7 +13,7 @@ For a bilingual Chinese and English status-code reference, see [`ERROR_CODES.md`
 3. Confirm the model name is spelled exactly as documented.
 4. Confirm the endpoint matches the model family.
 5. Remove private data and reduce the request to a minimal reproducible example.
-6. Check the current RPM and quota values in `MODEL_CATALOG.md`.
+6. Check the current RPM and quota values in `MODEL_CATALOG.md` and `TOKEN_PLAN_FAQ.md`.
 7. Add retry with exponential backoff for transient server or gateway errors.
 
 ## Endpoint Checklist
@@ -52,6 +52,7 @@ For `401` responses:
 For `429` responses:
 
 - Check the current plan-level RPM in `MODEL_CATALOG.md`.
+- For video requests, use the 2026-06-28 public reference values: Free / default `1` actual RPM, Enterprise `2` actual RPM, and Token Plan `5` actual RPM.
 - Reduce concurrent requests.
 - Add exponential backoff.
 - Avoid polling video tasks too frequently.
